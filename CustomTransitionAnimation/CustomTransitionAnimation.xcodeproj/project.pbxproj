@@ -26,7 +26,7 @@
 		AA381C2B24D65BD600BF78A0 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2724D65BD600BF78A0 /* Ubuntu-Medium.ttf */; };
 		AA381C2C24D65BD600BF78A0 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2824D65BD600BF78A0 /* Ubuntu-Bold.ttf */; };
 		AA381C2D24D65BD600BF78A0 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2924D65BD600BF78A0 /* Ubuntu-Light.ttf */; };
-		AA41083724D686BB004482F7 /* DummyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA41083624D686BB004482F7 /* DummyModel.swift */; };
+		AA41083724D686BB004482F7 /* ResortViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA41083624D686BB004482F7 /* ResortViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,7 @@
 		AA381C2724D65BD600BF78A0 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
 		AA381C2824D65BD600BF78A0 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		AA381C2924D65BD600BF78A0 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
-		AA41083624D686BB004482F7 /* DummyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyModel.swift; sourceTree = "<group>"; };
+		AA41083624D686BB004482F7 /* ResortViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 			children = (
 				AA381BD724D653FE00BF78A0 /* AppDelegate.swift */,
 				AA381BD924D653FE00BF78A0 /* SceneDelegate.swift */,
-				AA41083624D686BB004482F7 /* DummyModel.swift */,
+				AA41083624D686BB004482F7 /* ResortViewModel.swift */,
 				AA381C2024D65B9A00BF78A0 /* Screens */,
 				AA381C1B24D65B7700BF78A0 /* Extensions */,
 				AA381C1224D65B3C00BF78A0 /* CustomClasses */,
@@ -344,7 +344,7 @@
 				AA381C1F24D65B8D00BF78A0 /* UIView+Extension.swift in Sources */,
 				AA381C1924D65B5D00BF78A0 /* AppColor.swift in Sources */,
 				AA381C1824D65B5D00BF78A0 /* AppTabBarController.swift in Sources */,
-				AA41083724D686BB004482F7 /* DummyModel.swift in Sources */,
+				AA41083724D686BB004482F7 /* ResortViewModel.swift in Sources */,
 				AA381C2324D65BA600BF78A0 /* StartViewController.swift in Sources */,
 				AA381C2424D65BA600BF78A0 /* YogaViewController.swift in Sources */,
 				AA381C1724D65B5D00BF78A0 /* CustomSegue.swift in Sources */,
