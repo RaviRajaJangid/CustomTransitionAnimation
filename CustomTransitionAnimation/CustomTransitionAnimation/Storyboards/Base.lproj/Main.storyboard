@@ -501,13 +501,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qce-ii-bGq">
-                                <rect key="frame" x="175.66666666666666" y="109" width="62.666666666666657" height="26"/>
+                                <rect key="frame" x="176.66666666666666" y="109" width="60.666666666666657" height="27"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
                                 <color key="textColor" name="Brown"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page is not implemented yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTw-kg-0WM">
-                                <rect key="frame" x="87.666666666666686" y="174" width="239" height="21"/>
+                                <rect key="frame" x="92.333333333333329" y="175" width="229.66666666666669" height="21"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
                                 <color key="textColor" name="LightBrown"/>
                                 <nil key="highlightedColor"/>
@@ -538,13 +538,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-Pk-mKX">
-                                <rect key="frame" x="161" y="109" width="92.333333333333314" height="26"/>
+                                <rect key="frame" x="164.66666666666666" y="109" width="84.666666666666657" height="27"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
                                 <color key="textColor" name="Brown"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page is not implemented yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-rz-Lar">
-                                <rect key="frame" x="87.666666666666686" y="174" width="239" height="21"/>
+                                <rect key="frame" x="92.333333333333329" y="175" width="229.66666666666669" height="21"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
                                 <color key="textColor" name="LightBrown"/>
                                 <nil key="highlightedColor"/>
@@ -577,13 +577,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page is not implemented yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBz-SY-QpV">
-                                <rect key="frame" x="87.666666666666686" y="174" width="239" height="21"/>
+                                <rect key="frame" x="92.333333333333329" y="175" width="229.66666666666669" height="21"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
                                 <color key="textColor" name="LightBrown"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUL-Lf-oXU">
-                                <rect key="frame" x="164.33333333333334" y="109" width="85.333333333333343" height="26"/>
+                                <rect key="frame" x="169" y="109" width="76.333333333333314" height="27"/>
                                 <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
                                 <color key="textColor" name="Brown"/>
                                 <nil key="highlightedColor"/>
