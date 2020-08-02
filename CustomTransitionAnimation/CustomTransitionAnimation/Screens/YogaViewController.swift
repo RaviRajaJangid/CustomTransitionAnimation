@@ -127,9 +127,17 @@ class YogaViewController: UIViewController {
             buttonReviews.titleLabel?.font = UIFont.Ubantu(.bold ,size: 16)
         }
     }
-    
+    var resort: Resort?
     override func viewDidLoad() {
         super.viewDidLoad()
+         resort = Resort(name: "Efficitur Resort Yoga centre", address: "755 Brickyard St., Lake Zurich, IL 60047", weekDaysTime: "09.00 - 18.00", weekendTime: "09.00 - 18.00", description: "Integer ac interdum lacus. Nunc porta semper lacus a varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis", rating: "5.0")
+        
+        labelRatingValue.text = resort?.rating
+        labelResortName.text = resort?.name
+        labelResortAddress.text = resort?.address
+        labelWeekendTime.text = resort?.weekendTime
+        labelWeekDaysTime.text = resort?.weekDaysTime
+        labelResortDescriptionText.text = resort?.description
     }
     ///Action Back Navigation
     @IBAction func actionBackNavigate(_ sender: Any) {
@@ -137,13 +145,18 @@ class YogaViewController: UIViewController {
     }
     ///Action Mark As Favorite to this resort
     @IBAction func actionMarkAsFavorite(_ sender: Any) {
-        
+        print("CTA Mark as Favorite")
     }
     
     ///Action Write Review
     @IBAction func actionWriteReviews(_ sender: Any) {
+        print("CTA Write Reviews")
     }
     
+    ///Action Mark As Favorite to this resort
+    @IBAction func actionShowResortOnMap(_ sender: Any) {
+        print("CTA Locate Resort on Map")
+    }
 }
 
 extension YogaViewController: UIScrollViewDelegate {
