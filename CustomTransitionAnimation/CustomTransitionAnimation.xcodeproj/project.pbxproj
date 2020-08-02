@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		AA381BD824D653FE00BF78A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381BD724D653FE00BF78A0 /* AppDelegate.swift */; };
 		AA381BDA24D653FE00BF78A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381BD924D653FE00BF78A0 /* SceneDelegate.swift */; };
-		AA381BDC24D653FE00BF78A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381BDB24D653FE00BF78A0 /* ViewController.swift */; };
 		AA381BDF24D653FE00BF78A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA381BDD24D653FE00BF78A0 /* Main.storyboard */; };
 		AA381BE124D6540400BF78A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA381BE024D6540400BF78A0 /* Assets.xcassets */; };
 		AA381BE424D6540400BF78A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA381BE224D6540400BF78A0 /* LaunchScreen.storyboard */; };
 		AA381BEF24D6540400BF78A0 /* CustomTransitionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381BEE24D6540400BF78A0 /* CustomTransitionAnimationTests.swift */; };
 		AA381BFA24D6540400BF78A0 /* CustomTransitionAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381BF924D6540400BF78A0 /* CustomTransitionAnimationUITests.swift */; };
+		AA381C1724D65B5D00BF78A0 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1324D65B5D00BF78A0 /* CustomSegue.swift */; };
+		AA381C1824D65B5D00BF78A0 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1424D65B5D00BF78A0 /* AppTabBarController.swift */; };
+		AA381C1924D65B5D00BF78A0 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1524D65B5D00BF78A0 /* AppColor.swift */; };
+		AA381C1A24D65B5D00BF78A0 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1624D65B5D00BF78A0 /* CustomTabBar.swift */; };
+		AA381C1E24D65B8D00BF78A0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1C24D65B8D00BF78A0 /* UIFont+Extension.swift */; };
+		AA381C1F24D65B8D00BF78A0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C1D24D65B8D00BF78A0 /* UIView+Extension.swift */; };
+		AA381C2324D65BA600BF78A0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C2124D65BA600BF78A0 /* StartViewController.swift */; };
+		AA381C2424D65BA600BF78A0 /* YogaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA381C2224D65BA600BF78A0 /* YogaViewController.swift */; };
+		AA381C2A24D65BD600BF78A0 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2624D65BD600BF78A0 /* Ubuntu-Regular.ttf */; };
+		AA381C2B24D65BD600BF78A0 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2724D65BD600BF78A0 /* Ubuntu-Medium.ttf */; };
+		AA381C2C24D65BD600BF78A0 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2824D65BD600BF78A0 /* Ubuntu-Bold.ttf */; };
+		AA381C2D24D65BD600BF78A0 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA381C2924D65BD600BF78A0 /* Ubuntu-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,6 @@
 		AA381BD424D653FE00BF78A0 /* CustomTransitionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA381BD724D653FE00BF78A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA381BD924D653FE00BF78A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA381BDB24D653FE00BF78A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA381BDE24D653FE00BF78A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA381BE024D6540400BF78A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA381BE324D6540400BF78A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		AA381BF524D6540400BF78A0 /* CustomTransitionAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTransitionAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA381BF924D6540400BF78A0 /* CustomTransitionAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionAnimationUITests.swift; sourceTree = "<group>"; };
 		AA381BFB24D6540400BF78A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA381C1324D65B5D00BF78A0 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		AA381C1424D65B5D00BF78A0 /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		AA381C1524D65B5D00BF78A0 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		AA381C1624D65B5D00BF78A0 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		AA381C1C24D65B8D00BF78A0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		AA381C1D24D65B8D00BF78A0 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AA381C2124D65BA600BF78A0 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		AA381C2224D65BA600BF78A0 /* YogaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YogaViewController.swift; sourceTree = "<group>"; };
+		AA381C2624D65BD600BF78A0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		AA381C2724D65BD600BF78A0 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		AA381C2824D65BD600BF78A0 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		AA381C2924D65BD600BF78A0 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +123,13 @@
 			children = (
 				AA381BD724D653FE00BF78A0 /* AppDelegate.swift */,
 				AA381BD924D653FE00BF78A0 /* SceneDelegate.swift */,
-				AA381BDB24D653FE00BF78A0 /* ViewController.swift */,
-				AA381BDD24D653FE00BF78A0 /* Main.storyboard */,
+				AA381C2024D65B9A00BF78A0 /* Screens */,
+				AA381C1B24D65B7700BF78A0 /* Extensions */,
+				AA381C1224D65B3C00BF78A0 /* CustomClasses */,
+				AA381C1124D6590B00BF78A0 /* Storyboards */,
 				AA381BE024D6540400BF78A0 /* Assets.xcassets */,
-				AA381BE224D6540400BF78A0 /* LaunchScreen.storyboard */,
 				AA381BE524D6540400BF78A0 /* Info.plist */,
+				AA381C2524D65BCB00BF78A0 /* Fonts */,
 			);
 			path = CustomTransitionAnimation;
 			sourceTree = "<group>";
@@ -126,6 +150,55 @@
 				AA381BFB24D6540400BF78A0 /* Info.plist */,
 			);
 			path = CustomTransitionAnimationUITests;
+			sourceTree = "<group>";
+		};
+		AA381C1124D6590B00BF78A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AA381BDD24D653FE00BF78A0 /* Main.storyboard */,
+				AA381BE224D6540400BF78A0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AA381C1224D65B3C00BF78A0 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AA381C1524D65B5D00BF78A0 /* AppColor.swift */,
+				AA381C1424D65B5D00BF78A0 /* AppTabBarController.swift */,
+				AA381C1324D65B5D00BF78A0 /* CustomSegue.swift */,
+				AA381C1624D65B5D00BF78A0 /* CustomTabBar.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		AA381C1B24D65B7700BF78A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA381C1C24D65B8D00BF78A0 /* UIFont+Extension.swift */,
+				AA381C1D24D65B8D00BF78A0 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA381C2024D65B9A00BF78A0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AA381C2124D65BA600BF78A0 /* StartViewController.swift */,
+				AA381C2224D65BA600BF78A0 /* YogaViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AA381C2524D65BCB00BF78A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AA381C2824D65BD600BF78A0 /* Ubuntu-Bold.ttf */,
+				AA381C2924D65BD600BF78A0 /* Ubuntu-Light.ttf */,
+				AA381C2724D65BD600BF78A0 /* Ubuntu-Medium.ttf */,
+				AA381C2624D65BD600BF78A0 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +307,11 @@
 			files = (
 				AA381BE424D6540400BF78A0 /* LaunchScreen.storyboard in Resources */,
 				AA381BE124D6540400BF78A0 /* Assets.xcassets in Resources */,
+				AA381C2B24D65BD600BF78A0 /* Ubuntu-Medium.ttf in Resources */,
 				AA381BDF24D653FE00BF78A0 /* Main.storyboard in Resources */,
+				AA381C2D24D65BD600BF78A0 /* Ubuntu-Light.ttf in Resources */,
+				AA381C2C24D65BD600BF78A0 /* Ubuntu-Bold.ttf in Resources */,
+				AA381C2A24D65BD600BF78A0 /* Ubuntu-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA381BDC24D653FE00BF78A0 /* ViewController.swift in Sources */,
+				AA381C1E24D65B8D00BF78A0 /* UIFont+Extension.swift in Sources */,
 				AA381BD824D653FE00BF78A0 /* AppDelegate.swift in Sources */,
+				AA381C1F24D65B8D00BF78A0 /* UIView+Extension.swift in Sources */,
+				AA381C1924D65B5D00BF78A0 /* AppColor.swift in Sources */,
+				AA381C1824D65B5D00BF78A0 /* AppTabBarController.swift in Sources */,
+				AA381C2324D65BA600BF78A0 /* StartViewController.swift in Sources */,
+				AA381C2424D65BA600BF78A0 /* YogaViewController.swift in Sources */,
+				AA381C1724D65B5D00BF78A0 /* CustomSegue.swift in Sources */,
+				AA381C1A24D65B5D00BF78A0 /* CustomTabBar.swift in Sources */,
 				AA381BDA24D653FE00BF78A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
