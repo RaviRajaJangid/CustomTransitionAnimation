@@ -7,12 +7,25 @@
 //
 
 import UIKit
+protocol TransiningDelegate: UIViewController {
+    var animatableRatingViewWidthConstraint: NSLayoutConstraint? {get}
+    var startingRatingViewWidthConstraint:CGFloat {get}
+    var endRatingViewWidthConstraint:CGFloat {get}
+    
+    var startingImageHeightConstraint:CGFloat {get}
+    var endImageHeightConstraint:CGFloat {get}
+    var animatableImageHeightConstraint: NSLayoutConstraint? {get}
+}
 
 class YogaViewController: UIViewController {
-
+    
+    @IBOutlet weak var constraintHeaderImageHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var constraintRatingViewWidth: NSLayoutConstraint!
+    
     @IBOutlet weak var navBar: UIView!{
         didSet {
-            navBar.addGradientBackground(firstColor: UIColor.black.withAlphaComponent(0.2), secondColor: UIColor.clear, cornerRadius: 30.0)
+            navBar.addGradientBackground(firstColor: UIColor.black.withAlphaComponent(0.1), secondColor: UIColor.clear, cornerRadius: 30.0)
         }
     }
     
@@ -23,38 +36,38 @@ class YogaViewController: UIViewController {
         }
     }
     @IBOutlet weak var viewRating: UIView!{
-           didSet {
+        didSet {
             viewRating.layer.cornerRadius = viewRating.frame.size.height/2
             viewRating.addShadow(shadowOffset:  CGSize(width: 0, height: 8))
-           }
-       }
+        }
+    }
     
     @IBOutlet weak var labelRating: UILabel!{
-                didSet {
-                  labelRating.font = UIFont.Ubantu( size: 14)
-                  labelRating.textColor = AppColor.black
-                }
-            }
+        didSet {
+            labelRating.font = UIFont.Ubantu( size: 14)
+            labelRating.textColor = AppColor.black
+        }
+    }
     @IBOutlet weak var labelRatingValue: UILabel!{
-                 didSet {
-                   labelRatingValue.font = UIFont.Ubantu( size: 15)
-                   labelRatingValue.textColor = AppColor.Brown
-                 }
-             }
-       
+        didSet {
+            labelRatingValue.font = UIFont.Ubantu( size: 15)
+            labelRatingValue.textColor = AppColor.Brown
+        }
+    }
+    
     @IBOutlet weak var labelResortName: UILabel!{
-                didSet {
-                    labelResortName.font = UIFont.Ubantu(.bold, size: 20)
-                  labelResortName.textColor = AppColor.black
-                }
-            }
-      
+        didSet {
+            labelResortName.font = UIFont.Ubantu(.bold, size: 20)
+            labelResortName.textColor = AppColor.black
+        }
+    }
+    
     @IBOutlet weak var labelResortAddress: UILabel!{
-                didSet {
-                  labelResortAddress.font = UIFont.Ubantu(.light, size: 14)
-                  labelResortAddress.textColor = AppColor.lightBrown
-                }
-            }
+        didSet {
+            labelResortAddress.font = UIFont.Ubantu(.light, size: 14)
+            labelResortAddress.textColor = AppColor.lightBrown
+        }
+    }
     @IBOutlet weak var buttonResortOnMap: UIButton!{
         didSet {
             buttonResortOnMap.titleLabel?.font = UIFont.Ubantu( size: 14)
@@ -63,74 +76,112 @@ class YogaViewController: UIViewController {
     }
     
     @IBOutlet weak var labelWeekDays: UILabel!{
-                didSet {
-                  labelWeekDays.font = UIFont.Ubantu( size: 14)
-                  labelWeekDays.textColor = AppColor.black
-                }
-            }
-    @IBOutlet weak var labelWeekDaysTime: UILabel!{
-                didSet {
-                  labelWeekDaysTime.font = UIFont.Ubantu( size: 14)
-                  labelWeekDaysTime.textColor = AppColor.darkBrown
-                }
-            }
-    @IBOutlet weak var labelWeekend: UILabel!{
-                didSet {
-                  labelWeekend.font = UIFont.Ubantu( size: 14)
-                  labelWeekend.textColor = AppColor.black
-                }
-            }
-    @IBOutlet weak var labelWeekendTime: UILabel!{
-                didSet {
-                  labelWeekendTime.font = UIFont.Ubantu( size: 14)
-                  labelWeekendTime.textColor = AppColor.darkBrown
-                }
-            }
-    
-    @IBOutlet weak var labelOpenNow: UILabel!{
-                didSet {
-                    labelOpenNow.font = UIFont.Ubantu(.bold ,size: 21)
-                  labelOpenNow.textColor = AppColor.darkBrown
-                }
-            }
-    
-    @IBOutlet weak var labelResortDescritopn: UILabel!{
-                didSet {
-                  labelResortDescritopn.font = UIFont.Ubantu( size: 14)
-                  labelResortDescritopn.textColor = AppColor.black
-                }
-            }
-    
-    
-      @IBOutlet weak var labelResortDescriptionText: UILabel!{
-                  didSet {
-                    labelResortDescriptionText.font = UIFont.Ubantu( size: 14)
-                    labelResortDescriptionText.textColor = AppColor.lightBrown
-                    labelResortDescriptionText.numberOfLines = 0
-                  }
-              }
-    
-    @IBOutlet weak var labelReviews: UILabel!{
         didSet {
-          labelReviews.font = UIFont.Ubantu( size: 14)
-          labelReviews.textColor = AppColor.black
+            labelWeekDays.font = UIFont.Ubantu( size: 14)
+            labelWeekDays.textColor = AppColor.black
         }
     }
-      
+    @IBOutlet weak var labelWeekDaysTime: UILabel!{
+        didSet {
+            labelWeekDaysTime.font = UIFont.Ubantu( size: 14)
+            labelWeekDaysTime.textColor = AppColor.darkBrown
+        }
+    }
+    @IBOutlet weak var labelWeekend: UILabel!{
+        didSet {
+            labelWeekend.font = UIFont.Ubantu( size: 14)
+            labelWeekend.textColor = AppColor.black
+        }
+    }
+    @IBOutlet weak var labelWeekendTime: UILabel!{
+        didSet {
+            labelWeekendTime.font = UIFont.Ubantu( size: 14)
+            labelWeekendTime.textColor = AppColor.darkBrown
+        }
+    }
+    
+    @IBOutlet weak var labelOpenNow: UILabel!{
+        didSet {
+            labelOpenNow.font = UIFont.Ubantu(.bold ,size: 21)
+            labelOpenNow.textColor = AppColor.darkBrown
+        }
+    }
+    
+    @IBOutlet weak var labelResortDescritopn: UILabel!{
+        didSet {
+            labelResortDescritopn.font = UIFont.Ubantu( size: 14)
+            labelResortDescritopn.textColor = AppColor.black
+        }
+    }
+    
+    
+    @IBOutlet weak var labelResortDescriptionText: UILabel!{
+        didSet {
+            labelResortDescriptionText.font = UIFont.Ubantu( size: 14)
+            labelResortDescriptionText.textColor = AppColor.lightBrown
+            labelResortDescriptionText.numberOfLines = 0
+        }
+    }
+    @IBOutlet weak var buttonReviews: UIButton! {
+        didSet {
+            buttonReviews.titleLabel?.font = UIFont.Ubantu(.bold ,size: 16)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-///Action Back Navigation
+    ///Action Back Navigation
     @IBAction func actionBackNavigate(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-///Action Mark As Favorite to this resort
+    ///Action Mark As Favorite to this resort
     @IBAction func actionMarkAsFavorite(_ sender: Any) {
         
     }
     
-///Action Write Review
+    ///Action Write Review
     @IBAction func actionWriteReviews(_ sender: Any) {
+    }
+    
+}
+
+extension YogaViewController: UIScrollViewDelegate {
+    //Disable top empty area bounce
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.bounces = (scrollView.contentOffset.y > 0)
+    }
+}
+
+extension YogaViewController: TransiningDelegate {
+    
+    //constraint to manupulate height of TopHeaderImageView
+    var animatableImageHeightConstraint: NSLayoutConstraint? {
+        return constraintHeaderImageHeight
+    }
+    
+    //For Starting Frame of TopHeaderImageView
+    var startingImageHeightConstraint: CGFloat {
+        return 70
+    }
+    //For End Frame of TopHeaderImageView
+    var endImageHeightConstraint: CGFloat {
+        return 310
+    }
+    
+    //constraint to manupulate height of RatingView
+    var animatableRatingViewWidthConstraint: NSLayoutConstraint? {
+        return constraintRatingViewWidth
+    }
+    
+    //For Starting Frame of RatingView
+    var startingRatingViewWidthConstraint: CGFloat {
+        return 150
+    }
+    
+    //For End Frame of RatingView
+    var endRatingViewWidthConstraint: CGFloat {
+        return 300
     }
 }
 

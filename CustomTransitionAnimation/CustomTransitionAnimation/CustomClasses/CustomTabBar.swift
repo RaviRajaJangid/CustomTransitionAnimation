@@ -12,10 +12,7 @@ import UIKit
 class CustomTabBar: UITabBar {
  
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-//        self.layer.cornerRadius = 38
         roundTopCorner(cornerRadius: 50)
-        //self.clipsToBounds = true
-//        isTranslucent = false
         let newBarHeight:CGFloat = 65
         var size = super.sizeThatFits(size)
         size.height = newBarHeight
@@ -24,6 +21,6 @@ class CustomTabBar: UITabBar {
             let bottomPadding = window?.safeAreaInsets.bottom
             size.height = newBarHeight + (bottomPadding ?? 0.0)
         }
-          return size
+        return size
      }
 }
